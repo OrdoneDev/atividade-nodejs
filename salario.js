@@ -1,3 +1,4 @@
+import chalk from "chalk"
 import PromptSync from "prompt-sync"
 
 const prompt = PromptSync()
@@ -7,4 +8,4 @@ let porcentagem = Number(prompt("Informe a porcentagem: "))
 
 salario = salario * (1 + (porcentagem/100))
 
-console.log(`Novo valor do salário: ${salario}`)
+console.log(chalk.blue(`Novo valor do salário: ${salario}`))
